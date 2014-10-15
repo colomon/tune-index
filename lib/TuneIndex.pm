@@ -42,7 +42,7 @@ grammar TuneIndex::Grammar {
     }
     
     token key {
-        < C GIVEN AKA NOTE >
+        < C GIVEN AKA NOTE TS T >
     }
 }
 
