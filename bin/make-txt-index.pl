@@ -6,6 +6,7 @@ TuneIndex::Grammar.parse(slurp("trip-to-sligo"), :actions($tunes)) or die "Unabl
 
 sub sortable-name($_) {
     when /^The \s+ (.*)$/ { $0 ~ ", The" }
+    when /^A \s+ (.*)$/   { $0 ~ ", A" }
     default { $_ }
 }
 
