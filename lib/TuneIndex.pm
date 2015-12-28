@@ -2,7 +2,7 @@ use v6;
 # use Grammar::Tracer;
 
 sub infix:<++> ($a, $b) {
-    my @ = $a.values, $b.values;
+    my @ = flat $a.values, $b.values;
 }
 
 class TuneIndex {
